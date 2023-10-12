@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PENJUMLAHAN BILANGAN</title>
+    <script>
+        function jumlahkan() {
+            
+            var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            
+            
+            if (isNaN(bilangan1) || isNaN(bilangan2)) {
+                alert("Masukkan bilangan yang valid!");
+                return;
+            }
+            
+            
+            var hasil = bilangan1 + bilangan2;
+            
+            
+            alert("Hasil penjumlahan: " + hasil);
+        }
+        
+        function ulang() {
+            document.getElementById("bilangan1").value = "";
+            document.getElementById("bilangan2").value = "";
+        }
+    </script>
+</head>
+<body>
+    <h1>PENJUMLAHAN BILANGAN</h1>
+    <label for="bilangan1">Bilangan pertama:</label>
+    <input type="text" id="bilangan1"><br>
+    
+    <label for="bilangan2">Bilangan kedua:</label>
+    <input type="text" id="bilangan2"><br>
+    
+    <button onclick="jumlahkan()">Jumlahkan</button>
+    <button onclick="ulang()">Ulang</button>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    background-color: #5e83a6; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    width: 310px;
+    margin: 5cm auto 0 auto; 
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: black; 
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#alamat {
+height: 5em;
+}
+
+button {
+    background-color: rgb(43, 125, 206);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
